@@ -40,5 +40,5 @@ Currently (2019-10-19) I focus on writing missing (basic) features and cleaning 
 
 
 [1]: https://github.com/agentejo/cockpit/
-[2]: https://github.com/raffaelj/cockpit_CpMultiplane
+[2]: https://github.com/raffaelj/CpMultiplane
 [3]: https://github.com/raffaelj/CpMultiplane/blob/master/CHANGELOG.md
