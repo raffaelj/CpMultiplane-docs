@@ -6,8 +6,10 @@
 
 Arguments:
 
-* `$query` (array | string)
-* `$list` (ArrayObject)
+```text
+$query (array | string)
+$list  (ArrayObject)
+```
 
 Example:
 
@@ -44,9 +46,11 @@ $app->on('multiplane.search.before', function(&$query, &$list) {
 
 Arguments:
 
-* `$query` (array | string)
-* `$list` (ArrayObject)
-* `$sort` (null | callable)
+```text
+$query (array | string)
+$list  (ArrayObject)
+$sort  (null | callable)
+```
 
 By default, found entries are sorted by weight.
 
@@ -65,7 +69,6 @@ $app->on('multiplane.search.after', function($query, $list, &$sort) {
 });
 ```
 
-
 ## Config
 
 config.yaml example for granular settings with multiple collections in search results:
@@ -73,6 +76,7 @@ config.yaml example for granular settings with multiple collections in search re
 ```yaml
 multiplane:
   search:
+    enabled: true
     collections:
       pages:
         label: Pages

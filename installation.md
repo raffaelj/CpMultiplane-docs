@@ -6,9 +6,10 @@
 * PHP >= 7.0
 * PDO + SQLite (or MongoDB)
 * GD extension
+* pecl intl extension
 * mod_rewrite, mod_versions enabled (on apache)
 
-make also sure that `$_SERVER['DOCUMENT_ROOT']` exists and is set correctly.
+Make also sure that `$_SERVER['DOCUMENT_ROOT']` exists and is set correctly.
 
 ## Installation
 
@@ -19,8 +20,14 @@ make also sure that `$_SERVER['DOCUMENT_ROOT']` exists and is set correctly.
     2. Go to __/cockpit/install__ via Browser
     3. You're ready to use Cockpit :-)
 4. Install optional cockpit addons
-5. Create a collection "pages" with these fields:
-  * to do...
+5. Create a collection "pages" with at least these fields:
+  * title (type: text)
+  * published (type: boolean)
+  * content (type: text|textarea|wysiwyg|markdown|repeater)
+  * description (type: textarea)
+  * and optional more fields
+    * slug (type: text) with UniqueSlugs addon
+    * ... to do
 6. Adjust your settings
 7. Add your content
 8. Change everything, if you don't like the defaults
